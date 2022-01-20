@@ -1,0 +1,19 @@
+### 创建定时任务
+POST http://localhost:4242/client-api/jobs/
+Content-Type: application/json
+
+{
+    "name": "hello",
+    "creator": "lichun",
+    "schedule": {
+        "limit": 10,
+        "skip": 3,
+        "cron": "* * * * * *"
+    },
+    "worker": {
+        "url": "http://localhost:4242/",
+        "data": {
+            "hello": "world"
+        }
+    }
+}
