@@ -1,4 +1,4 @@
-import { getApi, json, POST } from "../utils/fetch.js";
+import { getApi, json, POST } from "es-fetch-api";
 
 export default class WorkerSpec {
     /**
