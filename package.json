@@ -1,5 +1,5 @@
 {
-  "name": "cron-server",
+  "name": "ha-cron-server",
   "version": "1.0.0",
   "description": "An distributed, high available scheduled jobs system based on Redis",
   "main": "src/index.js",
@@ -17,7 +17,7 @@
     "dayjs": "^1.10.7",
     "deepmerge": "^4.2.2",
     "dotenv-flow": "^3.2.0",
-    "es-fetch-api": "^1.0.3",
+    "es-fetch-api": "^1.0.5",
     "eventemitter2": "^6.4.5",
     "ioredis": "^4.28.2",
     "koa": "^2.13.4",
