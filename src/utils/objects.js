@@ -18,7 +18,7 @@ const deserializerFunctions = {
 }
 export const deserializeValue = value => {
     const type = value?.[0]
-    const val = value?.substr(2)
+    const val = value?.substring(2)
     return deserializerFunctions[type]?.(val)
 }
 
@@ -65,7 +65,7 @@ export const deserialize = (obj, prefix = '') => {
         entries
             .forEach(([ key, value ]) => {
                 if (prefix && !key.startsWith(`${prefix}.`)) return
-                const path = deserializeKey(key.substr(prefixLength))
+                const path = deserializeKey(key.substring(prefixLength))
                 let node = result
                 while (path.length > 1) {
                     node = node[path.shift()]

@@ -1,4 +1,3 @@
-import Controller from "../controller.js";
 import Job from "../../../domain/job.js";
 import { generateObjectID } from "../../../utils/oid.js";
 import Schedule from "../../../domain/schedule.js";
@@ -7,6 +6,7 @@ import { repo } from "../../../repository/redis-repository.js";
 import { redis } from "../../../utils/redis.js";
 import dayjs from "dayjs";
 import { notify } from "../../../utils/notify.js";
+import { Controller } from "koa-es-template";
 
 export default class JobsController extends Controller {
 

@@ -1,5 +1,5 @@
-import Controller from '../Controller.js';
 import apiDef from './api-def.js';
+import { Controller } from "koa-es-template";
 
 export default class AdminApi extends Controller {
     constructor(config) {

@@ -1,4 +1,4 @@
-import Controller from "../Controller.js";
+import { Controller } from "koa-es-template";
 
 export default class Jobs extends Controller {
 

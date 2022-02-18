@@ -1,7 +1,7 @@
-import { defaultLogProvider } from './logger.js';
 import RedisURL from './redis-url.js';
+import { getLogger } from "koa-es-template";
 
-const logger = defaultLogProvider('src/utils/redis.js')
+const logger = getLogger('src/utils/redis.js')
 
 /**
  *

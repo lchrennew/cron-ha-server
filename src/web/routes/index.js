@@ -1,8 +1,7 @@
 import AdminApi from './admin-api/index.js';
 import apiDef from './api-def.js';
 import ClientApi from './client-api/index.js'
-import Controller from './Controller.js';
-
+import { Controller } from "koa-es-template";
 
 export default class IndexController extends Controller {
     constructor(config) {

@@ -1,4 +1,4 @@
-import './utils/env.js'
-import { start } from "./web/server.js";
+import { startServer } from "koa-es-template";
+import IndexController from "./web/routes/index.js";
 
-await start()
+await startServer({ index: IndexController })
