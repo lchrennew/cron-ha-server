@@ -1,6 +1,6 @@
 {
   "name": "ha-cron-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An distributed, high available scheduled jobs system based on Redis",
   "main": "src/index.js",
   "author": "Chun Li",
