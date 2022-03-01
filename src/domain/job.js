@@ -1,6 +1,6 @@
-import { generateObjectID } from "../utils/oid.js";
 import Schedule from "./schedule.js";
 import WorkerSpec from "./worker-spec.js";
+import { generateObjectID } from "es-object-id";
 
 export default class Job {
     name
